@@ -8,9 +8,8 @@ export const clientRoutes: MenuType[] = [
 ]
 
 export const dashboardRoutes: MenuType[] = [
-  { route: "/dashboard", name: "Init" },
+  { route: "/dashboard", name: "Perfil" },
   { route: "/dasbboard/clients", name: "Clients" },
   { route: "/dashboard/paymants", name: "Payments" },
-  { route: "/dashboard/calendar", name: "Calendar" },
-  { route: "/", name: "salir" },
+  { route: "/dashboard/calendar", name: "Calendar" }
 ]

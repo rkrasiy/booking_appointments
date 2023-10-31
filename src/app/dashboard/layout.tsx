@@ -1,7 +1,7 @@
 'use client'
 import DashboardMenu from '../components/dashboard-menu'
-import isAuth from '../components/isAuth'
-import { isAuthenticated } from '../utils/auth'
+
+import SignOutSection from '../components/user-info'
 
 
 function RootLayout({
@@ -14,7 +14,9 @@ function RootLayout({
     <div className='flex flex-grow'>
      <DashboardMenu />
       <div className='w-full'>
-        <div>Salir</div>
+        <div>
+          <SignOutSection />
+        </div>
         {children}
       </div>
      </div>
