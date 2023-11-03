@@ -1,7 +1,7 @@
 'use client'
-import DashboardMenu from '../components/dashboard-menu'
 
-import SignOutSection from '../components/user-info'
+import AuthButton from '../components/Auth-Button'
+import MenuColumn from './menu-column'
 
 
 function RootLayout({
@@ -9,17 +9,16 @@ function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  
 
   return (
     <div className='flex flex-grow'>
-     <DashboardMenu />
+      <MenuColumn />
       <div className='w-full'>
-        <div>
-          <SignOutSection />
-        </div>
+        <AuthButton />
         {children}
       </div>
-     </div>
+    </div>
   )
 }
 

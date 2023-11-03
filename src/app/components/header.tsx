@@ -1,11 +1,14 @@
 'use client'
 import Image from "next/image"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import { clientRoutes } from "../_common/menu"
+import { Button } from "./button"
+import AuthButton from "./Auth-Button"
 
 export default function Header() {
   const pathname = usePathname()
+  const navigate = useRouter()
 
   return (
     <header className="shadow-1 bg-blue-100 shadow-md fixed w-full">
@@ -23,6 +26,7 @@ export default function Header() {
             ))
           }
         </nav>
+        <AuthButton />
       </div>
 
     </header>

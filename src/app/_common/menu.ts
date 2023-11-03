@@ -8,6 +8,7 @@ export const clientRoutes: MenuType[] = [
 ]
 
 export const dashboardRoutes: MenuType[] = [
+  { route: "/", name: "Web"},
   { route: "/dashboard", name: "Perfil" },
   { route: "/dasbboard/clients", name: "Clients" },
   { route: "/dashboard/paymants", name: "Payments" },
