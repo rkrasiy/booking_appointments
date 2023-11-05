@@ -11,7 +11,7 @@ export default function Header() {
   const navigate = useRouter()
 
   return (
-    <header className="shadow-1 bg-blue-100 shadow-md fixed w-full">
+    <header className="shadow-1 bg-blue-100 shadow-md fixed w-full p-3">
       <div className="w-full max-w-screen-xl xl:mx-auto">
         <Image src={"./icon.svg"} alt="icon" width={50} height={50} className="inline-block"/>
         <nav className="inline-flex justify-end">

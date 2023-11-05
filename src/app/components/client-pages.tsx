@@ -5,7 +5,7 @@ export default function ClientPages({ children }: { children: React.ReactNode })
   return (
     <>
       <Header />
-      <main className='flex-grow mt-12'>
+      <main className='flex-grow mt-32 bg-violet-'>
         <div className='container mx-auto'>
           {children}
         </div>

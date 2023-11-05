@@ -21,7 +21,7 @@ export default function Home() {
       <main className='flex-grow mt-12'>
         {
           ["1", "2", "3", "4"].map(item => (
-            <Section key={item}><h1>{item}</h1></Section>
+            <Section key={item}><h1>{item}Prueba</h1></Section>
           ))
         }
       </main>
