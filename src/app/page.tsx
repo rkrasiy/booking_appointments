@@ -1,6 +1,7 @@
 import ClientPages from "./components/client-pages"
 import Footer from "./components/footer"
 import Header from "./components/header"
+import HeroSection from "./components/hero-section"
 
 const Section = ({
   children
@@ -8,7 +9,7 @@ const Section = ({
   children: React.ReactNode
 }) => {
   return (
-    <div className='h-screen bg-slate-300 flex items-center justify-center'>
+    <div className='h-screen bg-white flex items-center justify-center'>
       {children}
     </div>
   )
@@ -18,10 +19,12 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className='flex-grow mt-12'>
+     
+      <main className='flex-grow'>
+        
         {
-          ["1", "2", "3", "4"].map(item => (
-            <Section key={item}><h1>{item}Prueba</h1></Section>
+          [<HeroSection />, "2", "3", "4"].map(item => (
+            <Section key={item}><div>{item}</div></Section>
           ))
         }
       </main>

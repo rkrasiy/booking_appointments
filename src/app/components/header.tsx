@@ -11,9 +11,9 @@ export default function Header() {
   const navigate = useRouter()
 
   return (
-    <header className="shadow-1 bg-blue-100 shadow-md fixed w-full p-3">
+    <header className="shadow-1 bg-white shadow-md fixed w-full p-3 z-[999]">
       <div className="w-full max-w-screen-xl xl:mx-auto">
-        <Image src={"./icon.svg"} alt="icon" width={50} height={50} className="inline-block"/>
+        <Image src={"./logo-padel.svg"} alt="icon" width={120} height={250} className="inline-block p-3"/>
         <nav className="inline-flex justify-end">
           {
             clientRoutes.map(({ route, name }) => (
