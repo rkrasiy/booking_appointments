@@ -21,7 +21,6 @@ export default function Home() {
       <Header />
      
       <main className='flex-grow'>
-        
         {
           [<HeroSection />, "2", "3", "4"].map(item => (
             <Section key={item}><div>{item}</div></Section>
